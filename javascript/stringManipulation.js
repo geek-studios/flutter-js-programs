@@ -1,4 +1,4 @@
-/* This simple code snippets can be used to manipulate a input in javascrip */
+/* This simple code snippets can be used to manipulate a input string in javascript */
 /* Coded with ❤️ & ☕ by https://github.com/nihalansar */
 
 let standardTitleCase = (input) => {
