@@ -2,8 +2,8 @@ const { samplePromise } = require('./promise.js')
 
 const resolve = async () => {
     try {
-        const resp = await samplePromise()
-        console.log(resp)
+        const val = await samplePromise()
+        console.log(val)
     }
     catch(e){
         console.log(e)
