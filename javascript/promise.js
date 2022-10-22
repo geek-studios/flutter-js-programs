@@ -6,4 +6,4 @@ const samplePromise = ()=>{
     })
 }
 
-export {samplePromise}
+module.exports ={samplePromise}
