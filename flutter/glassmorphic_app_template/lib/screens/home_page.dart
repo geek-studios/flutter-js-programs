@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:glassmorphic_app_template/widgets/custome_appbar.dart';
+import 'package:glassmorphic_app_template/widgets/custom_appbar.dart';
 import 'package:glassmorphic_app_template/widgets/glassy_container.dart';
 import 'package:glassmorphic_app_template/widgets/glassy_navbar.dart';
 
@@ -13,10 +13,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBody: true,
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(56),
           child: CustomAppBar(title: 'Home')),
-      bottomNavigationBar: const GlassyNavBar(),
+      bottomNavigationBar: const GlassyNavBar(selectedIndex: 0,),
       body: Container(
         alignment: Alignment.center,
         height: size.height,

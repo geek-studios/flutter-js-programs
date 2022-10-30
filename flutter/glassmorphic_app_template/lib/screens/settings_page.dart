@@ -1,8 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-import '../widgets/custome_appbar.dart';
+import '../widgets/custom_appbar.dart';
 import '../widgets/glassy_container.dart';
 import '../widgets/glassy_navbar.dart';
 
@@ -13,10 +11,13 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBody: true,
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(56),
           child: CustomAppBar(title: 'Home')),
-      bottomNavigationBar: const GlassyNavBar(),
+      bottomNavigationBar: const GlassyNavBar(
+        selectedIndex: 1,
+      ),
       body: Container(
         alignment: Alignment.center,
         height: size.height,
